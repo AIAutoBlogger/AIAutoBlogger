@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Auto Blogger Tutorial - Shopify App Guide</title>
+    <meta name="description" content="Learn how to use AI Auto Blogger in your Shopify admin. Step by step tutorial for generating and publishing blog posts with AI.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5DD8V3066"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-S5DD8V3066');
+        </script>
+    <style>
+        /* Tutorial-specific styles */
+        .tutorial-hero {
+            background: var(--bg-white);
+            padding: 40px 0 40px;
+            color: var(--text-dark);
+        }
+        
+        .tutorial-hero .subscribe-btn {
+            background: var(--primary-blue);
+            color: var(--text-light);
+        }
+        
+        .tutorial-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 40px 0 16px;
+            line-height: 1.2;
+            color: var(--text-dark);
+        }
+        
+        .tutorial-subtitle {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            opacity: 0.8;
+            max-width: 720px;
+            margin: 0 auto 40px;
+        }
+        
+        .video-section {
+            padding: 0 0 40px;
+            background: var(--bg-white);
+        }
+        
+        .video-container {
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .steps-section {
+            padding: 40px 0;
+            background: var(--bg-white);
+        }
+        
+        .steps-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .step-item {
+            margin-bottom: 24px;
+            padding: 24px;
+            background: var(--bg-light-blue);
+            border-radius: var(--border-radius);
+        }
+        
+        .step-item h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-blue);
+        }
+        
+        .step-item p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .shopify-section {
+            padding: 20px 0 40px;
+            text-align: center;
+            background: var(--bg-white);
+        }
+        
+        .shopify-section .shopify-btn {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0;
+            transition: var(--transition);
+        }
+        
+        .shopify-section .shopify-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        @media (max-width: 768px) {
+            .tutorial-title {
+                font-size: 36px;
+                padding: 0 20px;
+            }
+            
+            .tutorial-subtitle {
+                font-size: 18px;
+                padding: 0 20px;
+            }
+            
+            .video-container {
+                margin: 0 20px;
+            }
+            
+            .steps-container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="tutorial-hero">
+        <div class="container">
+            <!-- Logo and Subscribe button -->
+            <div class="hero-header">
+                <a href="https://aiautoblogger.app" class="logo">
+                    <img src="images/Logo 1200px (1).svg" alt="AI Auto Blogger Logo" class="logo-icon">
+                </a>
+                <a href="https://apps.shopify.com/ai-auto-blogger-1" class="subscribe-btn" target="_blank">Subscribe Now</a>
+            </div>
+            
+            <!-- Tutorial Title Section -->
+            <div class="text-center">
+                <h1 class="tutorial-title">AI Auto Blogger Shopify App Tutorial</h1>
+                <p class="tutorial-subtitle">Learn how to use AI Auto Blogger directly in your Shopify admin to create professional blogs from your ideas instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <div class="app-screenshot">
+                    <img src="images/Video Thumbnail.png" alt="AI Auto Blogger Tutorial Video" class="screenshot">
+                    <div class="play-overlay">
+                        <button class="play-btn">
+                            <img src="images/play-button.svg" alt="Play Tutorial">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="steps-container">
+                <div class="step-item">
+                    <h3>1. Install AI Auto Blogger</h3>
+                    <p>Find AI Auto Blogger in the Shopify App Store and click “Add app.” Follow the quick prompts to connect it to your store.</p>
+                </div>
+                
+                <div class="step-item">
+                    <h3>2. Navigate to Blog Generator</h3>
+                    <p>From your Shopify admin, click the AI Auto Blogger icon to launch the app and start creating content.</p>
+                </div>
+                
+                <div class="step-item">
+                    <h3>3. Enter Your Blog Ideas</h3>
+                    <p>Add up to five blog ideas at once, each with a title and a short subject outline. Optionally, select products to feature so they’re automatically linked in your post.</p>
+                </div>
+                
+                <div class="step-item">
+                    <h3>4. Generate and Review</h3>
+                    <p>Click "Submit and Publish" to create full-length, SEO-ready blogs with optimized meta titles and descriptions. Review and edit as you wish. The content goes live on your Shopify store automatically.</p>
+                </div>
+                
+                <div class="step-item">
+                    <h3>5. Publish Your Blogs</h3>
+                    <p>Review your published posts and continue to the submit more blog ideas through the app to grow your store organically with the all-in-one content engine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopify Badge Section -->
+    <section class="shopify-section">
+        <div class="container">
+            <button class="shopify-btn">
+                <img src="images/shopify-badge.svg" alt="Available on Shopify App Store">
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
