@@ -165,6 +165,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (navToggle && mobileMenu) {
+        navToggle.addEventListener('click', function() {
+            const isOpen = mobileMenu.style.display === 'block';
+            mobileMenu.style.display = isOpen ? 'none' : 'block';
+            navToggle.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                mobileMenu.style.display = 'none';
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
